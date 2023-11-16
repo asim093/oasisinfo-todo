@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://i1.wp.com/codemyui.com/wp-content/uploads/2016/11/pure-css-snow-animation.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    /* margin-top: 60px; */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    border: 1px solid white;
+    height: 500px;
+    width: 400px;
+    padding-top: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    border-radius: 10px;
+
+}
+
+.container h1 {
+    font-size: 2rem;
+    color: #fff;
+
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    max-width: 400px;
+    margin-top: 30px;
+}
+
+.input-container input {
+    flex: 1;
+    height: 40px;
+    padding: 5px;
+}
+
+.input-container button {
+    height: 40px;
+    width: 80px;
+    margin-left: 10px;
+}
+
+ul {
+    list-style: none;
+    width: 80%;
+    max-width: 400px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    margin: 5px 0;
+    padding: 5px;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .container h1 {
+        font-size: 1.5rem;
+    }
+
+    .input-container button {
+        width: 60px;
+    }
+}
